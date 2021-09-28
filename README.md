@@ -1,2 +1,8 @@
 # Cpp_OOP
-OOP-KelasTerbuka
+- OOP-KelasTerbuka
+
+# Bio
+- Name  : Yusril Arzaqi
+- Prodi : Tehnik Komputer
+- Univ  : Stekom
+
