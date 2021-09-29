@@ -47,5 +47,6 @@ int main(){
     cout << dataNama << endl;
     cout << "katrol : " << yusril.katrol(2.0) << endl;
 
+    yusril.print_info();
     return 0;
 }
