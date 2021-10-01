@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
+#include <chrono>
 
 using namespace std;
+using Clock = std::chrono::high_resolution_clock;
+using TimePoint = std::chrono::time_point<Clock>;
 
 class kosong{public:int data(){return 1;}};
 
@@ -44,6 +47,28 @@ int main(){
     cout << "objek2  heap : " << objek2 << endl;
     cout << "c      : " << &c << endl;
     cout << "d      : " << &d << endl;
+
+    // Seberapa cepat kita membuat object di masing-masing memory
+
+    TimePoint *tStackStart = new TimePoint();
+    TimePoint *tStackEnd = new TimePoint();
+    TimePoint *tHeapStart = new TimePoint();
+    TimePoint *tHeapEnd = new TimePoint();
+
+    cin.get();
+    *tStackStart = Clock::now();
+    Mahasiswa object3 = Mahasiswa("ucup");
+    *tStackEnd = Clock::now();
+    
+    cin.get();
+    *tHeapStart = Clock::now();
+    Mahasiswa* object4 = new Mahasiswa("otong");
+    *tHeapEnd = Clock::now();
+
+    chrono::duration<double> durasi = *tStackEnd - *tStackStart;
+    cout << "Waktu pembuatan object di stack adalah : " << durasi.count() << endl;
+    durasi = *tHeapEnd - *tHeapStart;
+    cout << "Waktu pembuatan object di heap adalah : " << durasi.count() << endl;
 
     cin.get();
     return 0;
