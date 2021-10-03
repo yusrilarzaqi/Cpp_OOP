@@ -6,7 +6,13 @@ using namespace std;
 using Clock = std::chrono::high_resolution_clock;
 using TimePoint = std::chrono::time_point<Clock>;
 
-class kosong{public:int data(){return 1;}};
+class kosong{
+    public:
+        // fungsi tidak akan dihitung 
+        int data(){
+            return 1;
+        }
+};
 
 class isi{
     public:
