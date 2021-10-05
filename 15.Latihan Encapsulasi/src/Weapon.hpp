@@ -6,10 +6,11 @@
 class Weapon{
     private:
         std::string name;
-        double attack_Power;
-        
+
     public:
-        Weapon(const char*, double);
+        Weapon(const char*);
+        void display();
+        std::string getName();
 };
 
 #endif
