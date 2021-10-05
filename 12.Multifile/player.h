@@ -1,3 +1,6 @@
+#ifndef _PLAYER
+#define _PLAYER
+
 class Player{
     public :
         std::string name;
@@ -7,3 +10,5 @@ class Player{
         std::string getName();
         void setName(const char*);
 };
+
+#endif
