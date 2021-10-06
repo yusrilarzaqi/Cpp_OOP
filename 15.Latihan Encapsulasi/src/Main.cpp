@@ -34,6 +34,7 @@ int main(){
     shen->serang(ashe);
     shen->serang(ashe);
     ashe->serang(shen);
+    ashe->display();
     ashe->serang(shen);
     ashe->serang(shen);
     ashe->serang(shen);
