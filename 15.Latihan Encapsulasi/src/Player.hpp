@@ -15,6 +15,7 @@ class Player{
         double attackPower, attackPower_base;
         double health, health_base, health_max;
         int jumlah;
+        Player* enemy;
     
     public:
         Player(const char*, double, double, double);
@@ -22,6 +23,8 @@ class Player{
         void equipWeapon(Weapon*);
         int getJumlah();
         void gainExp(int up);
+        void serang(Player*); 
+        void is_dead(Player*);
 };
 
 

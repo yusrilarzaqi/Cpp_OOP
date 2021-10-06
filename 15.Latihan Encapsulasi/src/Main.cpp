@@ -19,13 +19,14 @@ int main(){
     ashe->display();
 
 
+    shen->serang(ashe);
+    shen->serang(ashe);
+    shen->serang(ashe);
+    shen->serang(ashe);
 
-    shen->gainExp(50);
-    shen->gainExp(50);
-    shen->gainExp(50);
-    shen->gainExp(50);
-
+   
     shen->display();
+    ashe->display();
 
     return 0;
 }
