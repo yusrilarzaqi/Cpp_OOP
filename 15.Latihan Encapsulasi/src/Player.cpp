@@ -27,7 +27,7 @@ void Player::display(){
         std::cout << "Arrmor        : " << this->arrmor << std::endl;
         std::cout << "Health        : " << this->health << '/' << this->health_max << std::endl;
         std::cout << "Level         : " << this->level << std::endl;
-    }else{
+    }else if(this->health <= 0){
         std::cout << this->name << " telah mati" << std::endl;
     }
 }
@@ -64,7 +64,7 @@ void Player::serang(Player* enemy){
     this->gainExp(50);
 
     enemy->health -= this->attackPower - enemy->arrmor * 0.1;
-    std::cout << std::endl << this->name << " menyerang " << enemy->name << std::endl;
+    std::cout << this->name << " menyerang " << enemy->name << std::endl;
     if(enemy->health <= 0){
         this->is_dead(enemy);
         enemy->health = 0;

@@ -18,12 +18,31 @@ int main(){
     ashe->equipWeapon(bow);
     ashe->display();
 
+    cout << "\nPeperangan" << endl;
+    shen->serang(ashe);
+    shen->serang(ashe);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    shen->serang(ashe);
+    shen->serang(ashe);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    shen->serang(ashe);
+    shen->serang(ashe);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    shen->serang(ashe);
+    shen->serang(ashe);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    ashe->serang(shen);
+    ashe->serang(shen);    
+    ashe->serang(shen);
+    ashe->serang(shen);
 
-    shen->serang(ashe);
-    shen->serang(ashe);
-    shen->serang(ashe);
-    shen->serang(ashe);
-
+    cout << "\nPeperangan telah usai" << endl;
    
     shen->display();
     ashe->display();
