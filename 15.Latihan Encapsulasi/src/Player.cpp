@@ -34,7 +34,9 @@ void Player::display(){
 
 void Player::equipWeapon(Weapon* weapon){
     this->weapon = weapon;
-}int Player::getJumlah(){
+}
+
+int Player::getJumlah(){
     return this->jumlah;
 }
 
